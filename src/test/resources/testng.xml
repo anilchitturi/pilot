@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoUI" >
+    <test name="Search">
+        <parameter name="browser" value="chrome"></parameter>
+     <groups>
+       <run>
+        <include name="Sanity"/>
+       </run>
+       </groups>
+       <classes>
+            <class name="com.test.login.SearchTest" />
+        </classes>
+        <!--we can run tests by specifying tests, classes and packages as well-->
+        <!--<packages>-->
+        <!--<package name="com.we2o" />-->
+        <!--</packages>-->
+    </test>
+  </suite>
